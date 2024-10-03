@@ -7,4 +7,21 @@
     android:layout_height="match_parent"
     tools:context=".intents.IntentImplicito">
 
+    <TextView
+        android:id="@+id/mostrarComida"
+        android:layout_width="131dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mostrarBebida"
+        android:layout_width="131dp"
+        android:layout_height="49dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mostrarComida" />
 </androidx.constraintlayout.widget.ConstraintLayout>

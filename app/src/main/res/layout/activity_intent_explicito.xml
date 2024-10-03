@@ -5,6 +5,57 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".intents.IntentExplicito">
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBebida" />
+
+    <TextView
+        android:id="@+id/textViewComida"
+        android:layout_width="121dp"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="COMIDA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextComida"
+        android:layout_width="288dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewBebida"
+        android:layout_width="123dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:text="BEBIDA"
+        android:textAlignment="gravity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComida" />
+
+    <EditText
+        android:id="@+id/editTextBebida"
+        android:layout_width="288dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextComida" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
